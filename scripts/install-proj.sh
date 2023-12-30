@@ -4,7 +4,6 @@ PROJ_VERSION=9.3.1
 PROJ_DATA_VERSION=1.9
 
 echo "Install GDAL version $PROJ_VERSION"
-base=$(pwd)
 mkdir proj_src
 cd proj_src
 wget https://download.osgeo.org/proj/proj-$PROJ_VERSION.tar.gz
@@ -21,8 +20,4 @@ cmake -DBUILD_TESTING=OFF \
 cmake --build .
 sudo cmake --build . --target install
 sudo ldconfig
-
-cd $base
-rm proj-$PROJ_VERSION.tar.gz
-rm proj-data-$PROJ_DATA_VERSION.tar.gz
 
