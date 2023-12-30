@@ -20,7 +20,7 @@ cmake -DBUILD_TESTING=OFF \
       ..
 cmake --build .
 sudo cmake --build . --target install
-
+sudo ldconfig
 
 cd $base
 rm proj-$PROJ_VERSION.tar.gz

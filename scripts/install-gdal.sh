@@ -25,5 +25,5 @@ cmake -DGDAL_BUILD_OPTIONAL_DRIVERS=OFF \
 
 #cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
-
 sudo cmake --build . --target install
+sudo ldconfig

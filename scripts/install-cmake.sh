@@ -17,7 +17,8 @@ sudo mkdir -p /usr/local/man/
 sudo cp -r $CMAKE_PKG/man/* /usr/local/man/
 sudo cp -r $CMAKE_PKG/share/* /usr/local/share/
 sudo ln -s /usr/local/bin/cmake /bin/cmake
-rm -f cmake-$CMAKE_VERSION
+sudo ldconfig
 cd -
-rm $CMAKE_TAR
+rm -f cmake-$CMAKE_VERSION
+
 
